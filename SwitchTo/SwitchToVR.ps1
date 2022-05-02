@@ -21,11 +21,11 @@ function Get-Device-Id {
 # Playback Device
 $Vr = Get-Device-Id 'Playback' 'Index HMD (NVIDIA High Definition Audio)'
 if($Vr){
-	set-audiodevice -index $Vr
+    set-audiodevice -index $Vr
 }
 
 #Recording Device
 $Vr = Get-Device-Id 'Recording' 'Digital Audio Interface (Valve VR Radio & HMD Mic)'
 if($Vr){
-	set-audiodevice -index $Vr
+    set-audiodevice -index $Vr
 }
