@@ -22,11 +22,11 @@ function Get-Device-Id {
 # Playback Device
 $Desktop =  Get-Device-Id 'Playback' 'Headphones (HyperX Cloud Flight S Game)'
 if($Desktop){
-	{set-audiodevice -index $Desktop} 
+    set-audiodevice -index $Desktop 
 }
 
 #Recording Device
 $Desktop = Get-Device-Id 'Recording' 'Microphone (HyperX QuadCast S)'
 if($Desktop){
-	{set-audiodevice -index $Desktop} 
+    set-audiodevice -index $Desktop
 }
